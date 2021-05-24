@@ -1,0 +1,40 @@
+.nav {
+  background-color: #f9f9fa;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0px;
+
+  width: 100%;
+  padding: 20px 50px;
+  /*강의 6.12 borderBox 설정법*/
+  box-sizing: border-box;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: var(--grey);
+  position: relative;
+}
+.nav__notification {
+  position: absolute;
+  right: -12px;
+  bottom: 15px;
+  color: white;
+}
+.nav__upperdot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: tomato;
+  position: absolute;
+  right: -5px;
+  bottom: 25px;
+  font-weight: 600;
+  color: white;
+}

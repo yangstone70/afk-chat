@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find</title>
+  </head>
+  <body>
+    <!--상태바 영역-->
+    <section class="status-bar">
+      <div class="status-bar__column">
+        <p>SKT</p>
+        <!--Wifi Icon-->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <p>18:30</p>
+      </div>
+      <div class="status-bar__column">
+        <p>75%</p>
+        <!--Battery Icon -->
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <!--Lightning Icon-->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </section>
+
+    <!--스크린 헤더 영역: 친구, 채팅, 검색, 더보기, 설정, 대화창 : screen-header.css-->
+    <header class="screen-header">
+      <p class="screen-header__title">친구찾기</p>
+      <div class="screen-header__icons">
+        <button><i class="fas fa-search fa-2x"></i></button>
+        <button>
+          <a href="settings.html"><i class="fas fa-cog fa-2x"></i></a>
+        </button>
+      </div>
+    </header>
+
+    <!--메인영역: 각종 아이콘들... 하단에 user-component.css-->
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <p>QR Code</p>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <p>Add by Contacts</p>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint"></i>
+          <p>Add by ID</p>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <p>Invite</p>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">추천 친구</h6>
+        <p>추천친구가 없습니다.</p>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4 class="open-chat__title">오픈챗</h4>
+          <p>오픈챗 홈으로 가기<i class="fas fa-chevron-right fa-xs"></i></p>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#Jaurim</h5>
+            <h6 class="open-post__hashtags">#jaurim#fan@friends</h6>
+            <div class="open-post__members">
+              <img
+                src="https://img9.yna.co.kr/etc/inner/KR/2020/07/02/AKR20200702037100005_02_i_P2.jpg"
+              />
+              <p class="open-post__members-count">901 members</p>
+              <div class="divider"></div>
+              <p class="open-post__member-status">Active</p>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://img9.yna.co.kr/etc/inner/KR/2020/07/02/AKR20200702037100005_02_i_P2.jpg"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i>
+                <p>2002</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Navigation bar의 구조-검색엔진 구글도 nav안의 ul의 li 안에 있는 link를
+    가져오게 되어 있음-->
+    <!--하단의 네비게이션바: 친구, 채팅, 검색, 더보기 아이콘. 이번엔 채팅 선택표시-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><button class="nav__notification badge">4</button
+            ><i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><button class="nav__upperdot"></button
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--미디어쿼리: 가로길이 600px이하로 보기 제한-->
+    <div class="no-mobile">
+      <h4>가로길이 600px이하로 브라우저 크기를 조정해 주세요</h4>
+    </div>
+
+    <!--Awesome Font-->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

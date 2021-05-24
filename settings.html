@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <!--상태바 영역-->
+    <section class="status-bar">
+      <div class="status-bar__column">
+        <p>SKT</p>
+        <!--Wifi Icon-->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <p>19:00</p>
+      </div>
+      <div class="status-bar__column">
+        <p>75%</p>
+        <!--Battery Icon -->
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <!--Lightning Icon-->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </section>
+
+    <!--스크린헤더2 영역: 설정과 대화창에 적용된다: alt-screen-header.css-->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">설정</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fas fa-search fa-2x"></i>
+      </div>
+    </header>
+
+    <!--메인영역: settings.css-->
+    <main class="main-screen">
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-bullhorn"></i>
+            <span>알림</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-flask"></i>
+            <span>실험실</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-info-circle"></i>
+            <span>버전</span>
+          </div>
+          <div class="settings__setting-column">최신버전입니다.</div>
+        </li>
+      </ul>
+    </main>
+
+    <!--Navigation bar의 구조-검색엔진 구글도 nav안의 ul의 li 안에 있는 link를
+    가져오게 되어 있음-->
+    <!--하단의 네비게이션바: 친구, 채팅, 검색, 더보기 아이콘. 이번엔 채팅 선택표시-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><button class="nav__notification badge">4</button
+            ><i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><button class="nav__upperdot"></button
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--미디어쿼리: 가로길이 600px이하로 보기 제한-->
+    <div class="no-mobile">
+      <h4>가로길이 600px이하로 브라우저 크기를 조정해 주세요</h4>
+    </div>
+
+    <!--Awesome Font-->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

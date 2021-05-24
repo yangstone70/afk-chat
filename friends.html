@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends</title>
+  </head>
+  <body>
+    <!--상태바 영역-->
+    <section class="status-bar">
+      <div class="status-bar__column">
+        <p>SKT</p>
+        <!--Wifi Icon-->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <p>18:10</p>
+      </div>
+      <div class="status-bar__column">
+        <p>75%</p>
+        <!--Battery Icon -->
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <!--Lightning Icon-->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </section>
+
+    <!--스크린 헤더 영역: 친구, 채팅, 검색, 더보기, 설정, 대화창 : screen-header.css-->
+    <header class="screen-header">
+      <p class="screen-header__title">친구</p>
+      <div class="screen-header__icons">
+        <button><i class="fas fa-search fa-2x"></i></button>
+        <button><i class="fas fa-music fa-2x"></i></button>
+        <button>
+          <a href="settings.html"><i class="fas fa-cog fa-2x"></i></a>
+        </button>
+      </div>
+    </header>
+
+    <!--메인영역: 본인 소개, 채널타이틀, 채널라인: friends.css, user-component.css badge.css-->
+    <main class="main-screen">
+       <!--친구이름목록보기 표시 : friends.css
+        <a class="friends-display__link">
+         <i class="fas fa-info-circle"></i>
+          친구 이름 목록 보기
+         <i class="fas fa-chevron-right fa-xs"></i>
+       </a>
+      -->
+
+      <!--유저컴포넌트: 썸네일, 이름, 소개 형식으로 곳곳에 쓰임-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="/img/rowan.png"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">멋쟁이 로완</h4>
+            <h6 class="user-component__subtitle">
+            나는야 밤샘 게이머 사장님
+          </h6> 
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <!--채널타이틀-->
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <p>채널</p>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+      </div>
+      <!--유저컴포넌트: 우측에 '2>' 가 추가되어 있다-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="/img/chest.png"
+            class="user-component__avatar user-component__avatar--sm"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              추천채널<h4>
+            <!-- <h6 class="user-component__subtitle">
+            밤샘작업으로 늘 졸린 펭귄이
+          </h6> -->
+          </div>
+        </div>
+        <div class="user-component__column">
+            <p>2</p>
+            <i class="fas fa-chevron-right fa-xs"></i>
+        </div>
+      </div>
+
+      <!--친구타이틀-->
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <p>친구목록</p>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+      </div>
+      <!--유저컴포넌트: 친구소개-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+             src="/img/bellinda.png"
+             class="user-component__avatar user-component__avatar--sm"
+          />
+          <div class="user-component__text">
+            <p class="user-component__title user-component__title--not-bold">
+              벨린다<p>
+            <h6 class="user-component__subtitle">
+            엄마는 외계인
+            </h6> 
+          </div>
+        </div>
+      </div>
+      <!--유저컴포넌트: 친구소개-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+             src="/img/arthur.png"
+             class="user-component__avatar user-component__avatar--sm"
+          />
+          <div class="user-component__text">
+            <p class="user-component__title user-component__title--not-bold">
+              아서<p>
+            <h6 class="user-component__subtitle">
+            물주 아빠
+            </h6> 
+          </div>
+        </div>
+      </div>
+      <!--유저컴포넌트: 친구소개-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+             src="/img/shemira.png"
+             class="user-component__avatar user-component__avatar--sm"
+          />
+          <div class="user-component__text">
+            <p class="user-component__title user-component__title--not-bold">
+              쉐미라<p>
+            <h6 class="user-component__subtitle">
+            마녀 수학쌤
+            </h6> 
+          </div>
+        </div>
+      </div>
+      <!--유저컴포넌트: 친구소개-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+             src="/img/dolly2.png"
+             class="user-component__avatar user-component__avatar--sm"
+          />
+          <div class="user-component__text">
+            <p class="user-component__title user-component__title--not-bold">
+              돌리<p>
+            <h6 class="user-component__subtitle">
+            천사 영어샘
+            </h6> 
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!--Navigation bar의 구조-검색엔진 구글도 nav안의 ul의 li 안에 있는 link를
+    가져오게 되어 있음-->
+    <!--하단의 네비게이션바: 친구, 채팅, 검색, 더보기 아이콘. 이번엔 채팅 선택표시-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fas fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><button class="nav__notification badge">4</button
+            ><i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><button class="nav__upperdot"></button
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--스플래시 애니메이션-->
+    <div class="splash-screen">
+      <img src="img/afk-chat.png" />
+    </div>
+
+    <!--미디어쿼리: 가로길이 600px이하로 보기 제한-->
+    <div class="no-mobile">
+      <h4>가로길이 600px이하로 브라우저 크기를 조정해 주세요 </h4>
+    </div>
+
+    <!--Awesome Font-->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

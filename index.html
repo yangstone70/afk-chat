@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to AFK Arena Talk</title>
+  </head>
+  <body>
+    <!--상태바 영역-->
+    <section class="status-bar">
+      <div class="status-bar__column">
+        <p>SKT</p>
+        <!--Wifi Icon-->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <p>18:00</p>
+      </div>
+      <div class="status-bar__column">
+        <p>75%</p>
+        <!--Battery Icon -->
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <!--Lightning Icon-->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </section>
+
+    <!--웰컴헤더 영역-->
+    <header class="welcome-header">
+      <p class="welcome-header__title">AFK챗에 오신 걸 환영합니다!</p>
+      <p class="welcome-header__text">
+        아이디와 <br />
+        패스워드를 입력해 주세요~
+      </p>
+    </header>
+
+    <!--폼 영역: 아이디, 패스워드, 로그인, 회원가입 버튼-->
+    <form
+      class="login__form"
+      action="friends.html"
+      method="get"
+      id="login-form"
+    >
+      <input
+        class="login__form__input"
+        name="nameofuser"
+        type="text"
+        placeholder="이메일 아이디"
+      />
+      <input
+        class="login__form__input"
+        name="password1"
+        type="password"
+        placeholder="패스워드"
+      />
+      <input class="login__form__submit" type="submit" value="Log In" />
+
+      <a href="#">AFK 아이디와 비밀번호 찾기</a>
+    </form>
+
+    <!--미디어쿼리: 가로길이 600px이하로 보기 제한-->
+    <div class="no-mobile">
+      <h4>가로길이 600px이하로 브라우저 크기를 조정해 주세요</h4>
+    </div>
+
+    <!--Awesome Font-->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.status-bar {
+  background-color: brown;
+  display: flex;
+  /*justify-content: space-between;*/
+  /*이후 과정은 정확히 가운데에 놓기 위한 hack처리*/
+  justify-content: center;
+  padding: 5px 3px;
+
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+
+  font-size: 16px; /*디폴트값이 15-16임*/
+}
+
+.status-bar__column {
+  display: flex;
+  width: 33%; /*정확히 가운데에 놓기 위한 hack처리*/
+}
+.status-bar:first-child p {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__column .fa-battery-three-quarters {
+  margin: 0px 5px;
+}

@@ -1,0 +1,46 @@
+.user-component {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.user-component__column {
+  display: flex;
+  align-items: center;
+}
+.user-component__avatar {
+  block-size: 70px;
+  /*width: 70px;
+  height: 70px;
+  border: 2px solid white;*/
+  background-color: none;
+  border-radius: 40%;
+  margin-right: 20px;
+}
+.user-component__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-component__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.user-component__subtitle {
+  margin-top: 8px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.user-component__avatar--xl {
+  block-size: 80px;
+}
+.user-component__avatar--sm {
+  block-size: 60px;
+}
+.user-component__title--not-bold {
+  font-weight: 400; /*기본값*/
+}
+/*
+.user-component__column :last-child {
+  color: rgba(0, 0, 0, 0.4);
+}*/
