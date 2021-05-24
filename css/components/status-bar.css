@@ -1,6 +1,7 @@
 .status-bar {
   background-color: brown;
   display: flex;
+  z-index: 2;
   /*justify-content: space-between;*/
   /*이후 과정은 정확히 가운데에 놓기 위한 hack처리*/
   justify-content: center;
